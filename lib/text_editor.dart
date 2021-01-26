@@ -189,6 +189,21 @@ class _TextEditorState extends State<TextEditor> {
                                 decoration: InputDecoration(
                                   hintText: widget.hinttext,
                                   hintStyle: textStyleModel.textStyle,
+                                  enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                  ),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                  ),
+                                ),
+                                disabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                  ),
+                                ),
                                 ),
                               );
                             },
