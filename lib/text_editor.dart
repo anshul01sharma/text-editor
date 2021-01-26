@@ -187,7 +187,7 @@ class _TextEditorState extends State<TextEditor> {
                                 autofocus: true,
                                 cursorColor: Colors.white,
                                 decoration: InputDecoration(
-                                  hintText: hinttext,
+                                  hintText: widget.hinttext,
                                   hintStyle: textStyleModel.textStyle,
                                 ),
                               );
