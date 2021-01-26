@@ -46,6 +46,9 @@ class TextEditor extends StatefulWidget {
 
   /// Editor's default text
   final String text;
+  
+  /// Editor's default text
+  final String hinttext;
 
   /// Decoration to customize the editor
   final EditorDecoration decoration;
@@ -68,6 +71,7 @@ class TextEditor extends StatefulWidget {
     this.onTextStyleChanged,
     this.onTextChanged,
     this.decoration,
+    this.hinttext,
   });
 
   @override
@@ -182,7 +186,10 @@ class _TextEditorState extends State<TextEditor> {
                                 textAlign: textStyleModel.textAlign,
                                 autofocus: true,
                                 cursorColor: Colors.white,
-                                decoration: null,
+                                decoration: InputDecoration(
+                                  hintText: this.hinttext,
+                                  hintStyle: textStyleModel.textStyle,
+                                ),
                               );
                             },
                           ),
