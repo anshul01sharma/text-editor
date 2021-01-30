@@ -188,7 +188,11 @@ class _TextEditorState extends State<TextEditor> {
                                 cursorColor: Colors.white,
                                 decoration: InputDecoration(
                                   hintText: widget.hinttext,
-                                  hintStyle: textStyleModel.textStyle,
+                                  hintStyle: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.grey[300],
+                                    fontFamily: 'OpenSans',
+                                  ),
                                   enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Colors.transparent,
