@@ -190,7 +190,7 @@ class _TextEditorState extends State<TextEditor> {
                                   hintText: widget.hinttext,
                                   hintStyle: TextStyle(
                                     fontSize: 20,
-                                    color: Colors.grey[300],
+                                    color: Colors.white.withOpacity(0.6),
                                     fontFamily: 'OpenSans',
                                   ),
                                   enabledBorder: OutlineInputBorder(
